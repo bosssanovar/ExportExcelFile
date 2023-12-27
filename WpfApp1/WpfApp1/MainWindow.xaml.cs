@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Microsoft.Win32;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,29 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // ファイル保存ダイアログを生成します。
+            var dialog = new SaveFileDialog();
+
+            // フィルターを設定します。
+            // この設定は任意です。
+            dialog.Filter = "Excelファイル(*.xlsx)|*.xlsx";
+
+            // ファイル保存ダイアログを表示します。
+            var result = dialog.ShowDialog() ?? false;
+
+            // 保存ボタン以外が押下された場合
+            if (!result)
+            {
+                // 終了します。
+                return;
+            }
+
+            // ファイル保存ダイアログで選択されたファイルパス名を表示します。
+            MessageBox.Show(dialog.FileName);
         }
     }
 }
