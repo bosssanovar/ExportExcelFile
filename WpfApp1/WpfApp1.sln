@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{D3C509C8-BD2E-47C0-ADEF-BDD56EAA977F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportExcelFile", "ExportExcelFile\ExportExcelFile.csproj", "{F82CDDD7-BBA2-4778-ADAD-B531530AD808}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3C509C8-BD2E-47C0-ADEF-BDD56EAA977F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C509C8-BD2E-47C0-ADEF-BDD56EAA977F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C509C8-BD2E-47C0-ADEF-BDD56EAA977F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C509C8-BD2E-47C0-ADEF-BDD56EAA977F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82CDDD7-BBA2-4778-ADAD-B531530AD808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82CDDD7-BBA2-4778-ADAD-B531530AD808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82CDDD7-BBA2-4778-ADAD-B531530AD808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82CDDD7-BBA2-4778-ADAD-B531530AD808}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DB0D492-DC5E-42F2-BC11-7EC601BA69DA}
+	EndGlobalSection
+EndGlobal
