@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using ExportExcelFile;
+using Microsoft.Win32;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -41,8 +42,19 @@ namespace WpfApp1
                 return;
             }
 
-            // ファイル保存ダイアログで選択されたファイルパス名を表示します。
-            MessageBox.Show(dialog.FileName);
+            ExportXlsx(dialog.FileName);
+        }
+
+        private void ExportXlsx(string path)
+        {
+            NameCardParams nameCardParams = new(NameCardType.AAA, System.Drawing.Color.Blue, "AAAAAAAA AAAAAAAAA");
+
+            NameCard nameCard = new(nameCardParams, path);
+            var result = nameCard.ExportXlsx();
+            if(result != ExportErrorType.None)
+            {
+                // Error
+            }
         }
     }
 }
