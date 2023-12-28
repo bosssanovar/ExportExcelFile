@@ -47,14 +47,10 @@ namespace WpfApp1
 
         private void ExportXlsx(string path)
         {
-            NameCardParams nameCardParams = new(NameCardType.AAA, System.Drawing.Color.Blue, "AAAAAAAA AAAAAAAAA");
+            NameCardParams nameCardParams = new(NameCardType.AAA, System.Drawing.Color.LightSkyBlue, "AAAAAAAA AAAAAAAAA");
 
             NameCard nameCard = new(nameCardParams, path);
-            var result = nameCard.ExportXlsx();
-            if(result != ExportErrorType.None)
-            {
-                // Error
-            }
+            nameCard.ExportXlsx();
         }
     }
 }
